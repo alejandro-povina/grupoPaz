@@ -30,9 +30,9 @@ const Contacto = () => {
                     </div>
                     <div className="col-sm-6 col-md-6">
                     <h6> <FontAwesomeIcon icon={faPhoneAlt} className="ubic turn"></FontAwesomeIcon> Telefono</h6>
-                    <p>(+54) 381 6448281</p>
+                    <p>(+54) 3815 233262</p>
                     <h6> <FontAwesomeIcon icon={faEnvelope} className="ubic turn"></FontAwesomeIcon> Email</h6>
-                    <p>grupopaz@gmail.com</p>
+                    <p>grupopazsvasg@gmail.com</p>
                     </div>
                     
                    

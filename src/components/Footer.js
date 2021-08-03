@@ -37,8 +37,8 @@ const Footer = () => {
             <Dropdown.Divider/>
             <div className="d-flex justify-content-center">
             <div className="box">
-            <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> grupopaz@gmail.com</p>
-            <p><FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon> (+54) 3816 448281</p>
+            <p><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon> grupopazsvasg@gmail.com</p>
+            <p><FontAwesomeIcon icon={faPhoneAlt}></FontAwesomeIcon> (+54) 3815 233262</p>
             </div>
             </div>
            </div>
