@@ -1,7 +1,4 @@
 import React from 'react';
-import {Card} from "react-bootstrap";
-import bb from "../img/estibaBigBag.JPG";
-import bolsa50 from "../img/estibas50.JPG";
 
 const CardProductos = (props) => {
     return (

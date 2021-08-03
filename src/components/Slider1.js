@@ -1,8 +1,5 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import zulo from "../img/deposito.JPG"
-import estiba from "../img/estibas50.JPG"
-import cosecha from "../img/cosecha.JPG"
 import planta from "../img/planta.png"
 import plantacion from "../img/plantacion.jpeg"
 import granel from "../img/granel.JPG"

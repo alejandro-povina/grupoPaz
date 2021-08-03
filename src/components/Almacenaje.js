@@ -1,11 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import siempreVerde from "../img/siempreverde.png"
 import sanGeronimo from "../img/AzucareraSanGeronimo.png"
-import campo from "../img/campo.jpeg"
-import transporteBB from "../img/transporteBB.JPG"
-import estibaBigBag from "../img/estibaBigBag.JPG"
-import bolsaAzucar from "../img/bolsaAzucar1.png"
 import estibas50 from "../img/estibas50.JPG"
 import cascara from "../img/estibasCascara.JPG"
 

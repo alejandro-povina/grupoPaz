@@ -1,6 +1,6 @@
-import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import React from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 import Inicio from './components/Inicio';
@@ -15,7 +15,6 @@ import Logistica from './components/Logistica'
 
 const App = () => {
   return (
-  
       <Router>
         <div className="container-fluid">
         <Navigation></Navigation>

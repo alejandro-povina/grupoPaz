@@ -34,8 +34,6 @@ const Contacto = () => {
                     <h6> <FontAwesomeIcon icon={faEnvelope} className="ubic turn"></FontAwesomeIcon> Email</h6>
                     <p className="small">grupopazsvasg@gmail.com</p>
                     </div>
-                    
-                   
                         </div>
                     </Card>
                 </div>

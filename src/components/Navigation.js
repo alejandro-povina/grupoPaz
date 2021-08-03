@@ -1,7 +1,7 @@
 import React from 'react';
-import {Navbar, Nav, NavDropdown, Container} from 'react-bootstrap'
+import {Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import { withRouter } from 'react-router-dom';
-import grupoPaz from "../img/grupopaz.png"
+
 
 
 const Navigation = () => {

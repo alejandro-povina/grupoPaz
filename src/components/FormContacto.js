@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, {useState } from 'react';
 import { Form, Button, Card} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt, faUser, faBuilding, faComment, faTruck } from '@fortawesome/free-solid-svg-icons';
@@ -97,8 +97,6 @@ return true
     return false
   }
 }
-
-//limitar la cantidad de numeros en el numero telegonico
 
 
   const handleSubmit = (e)=>{

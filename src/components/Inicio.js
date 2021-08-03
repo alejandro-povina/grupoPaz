@@ -2,22 +2,12 @@ import React from 'react';
 
 import { withRouter} from 'react-router';
 import { Link } from 'react-router-dom';
-import areaPlanta from "../img/areaPlanta.JPG"
-import deposito from "../img/deposito.JPG"
 import estibasSky from "../img/estibasSky.JPG"
 import {Container, Card} from "react-bootstrap"
 import depo from "../img/depositoGeneral.jpeg"
 import siempreVerde from "../img/siempreverde.png"
 import sanGeronimo from "../img/AzucareraSanGeronimo.png"
 import grupoPaz from "../img/grupo.png"
-import planta from "../img/planta.png"
-import camion from "../img/depoPNG1.png"
-import cana from "../img/cañaPNG1.png"
-import transp from "../img/camionPNG1.png"
-import campo from "../img/campo.jpeg"
-import transporteBB from "../img/transporteBB.JPG"
-import estibaBigBag from "../img/estibaBigBag.JPG"
-import bolsaAzucar from "../img/bolsaAzucar1.png"
 import confiabilidad from '../img/system.png'
 import velocidad from '../img/speed.png'
 import inteligencia from '../img/light-bulb.png'
@@ -64,7 +54,6 @@ const Inicio = () => {
           </div>
           </div>
           </Card>  
-{/* OPCION A */}
 <Card className="w-100 tarjetas1 my-5">
   <Card.Header> <h3 className="display-6">Por que elegirnos?</h3></Card.Header>
   <Card.Body className="row">
@@ -99,7 +88,6 @@ const Inicio = () => {
   </Card.Body>
 </Card>
 </Container>
-
 <div className=" pb-2">
 <Container>
   <CardPresentacion></CardPresentacion>
@@ -115,9 +103,6 @@ const Inicio = () => {
     <Card.Text>
       <p>Produccion propia de caña de azucar y granos.</p>
       <p>Provision de servicios agricolas</p>
-    {/* <p>Produccion de caña de azucar</p>
-    <p>Produccion de granos </p>
-    <p>Provision de servicios agricolas</p>   */}
     </Card.Text>
   </Card.Body>
 </Card>

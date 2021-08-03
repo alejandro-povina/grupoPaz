@@ -4,9 +4,7 @@ import { withRouter } from 'react-router';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faEnvelope, faPhoneAlt} from "@fortawesome/free-solid-svg-icons";
-import siempreVerde from "../img/siempreverde.png"
-import sanGeronimo from "../img/AzucareraSanGeronimo.png"
-import grupoPaz from "../img/grupopaz.png"
+
 
 
 

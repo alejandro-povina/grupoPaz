@@ -1,7 +1,6 @@
 import React from 'react';
 import zulo from '../img/deposito.JPG'
-import { Container, Card } from 'react-bootstrap';
-import Slider from './Slider';
+import { Container} from 'react-bootstrap';
 import depo from "../img/depositoGeneral.jpeg"
 import grupoPaz from "../img/grupo.png"
 import Slider1 from './Slider1';
@@ -14,11 +13,9 @@ import juampi from "../img/juampi.jpeg"
 const Empresa = () => {
     return (
         <div className="fondo2">
-
             <div className="m-navbar" >
             <Slider1 ></Slider1>
             </div>
-                     {/* <Slider></Slider> */}
             <Container>
                             <div className="d-flex justify-content-center align-items-center">
                         <h3 className="lead display-4">Nuestra Empresa</h3>
@@ -33,12 +30,8 @@ const Empresa = () => {
                     <img src={fundadores} className="w-100 imgPrincipal" alt="" />
                     </div>
                     <div className="my-3 divlogos mx-auto py-3">
-                    {/* <div className=" col-sm-12 col-md-6 d-flex justify-content-around"> */}
                         <img src={siempreVerde} className="logo " alt="" />
-                        {/* </div>
-                        <div className=" col-sm-12 col-md-6 d-flex justify-content-around"> */}
-                        <img src={sanGeronimo} className="logo" alt="" />
-                        {/* </div> */}
+                        <img src={sanGeronimo} className="logo" alt="" />          
                     </div>
                     <div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis sapiente et. Repellat qui doloribus illum tempore accusamus impedit, ab fugit quaerat fuga! Quos eligendi, ad asperiores cupiditate illo eaque tempora? Hic tenetur nobis itaque sequi quae, doloribus error non quas dolorum voluptatem, cumque cupiditate explicabo quis quo odit, asperiores aut exercitationem! Quaerat distinctio ratione eius animi. At ipsam repellat numquam amet sint fugiat labore atque recusandae ut corporis sequi quisquam, velit.</p>
@@ -72,11 +65,8 @@ const Empresa = () => {
                         <img src={depo} className="w-100 imagen" alt="" />
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem reiciendis vel eaque praesentium nisi perferendis velit illum.</p>
                     </div>
-                    
                 </section>
-
-            </Container>
-            
+  </Container>   
         </div>
     );
 };
