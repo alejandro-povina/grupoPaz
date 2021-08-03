@@ -1,12 +1,13 @@
 import React from 'react';
-
 import { withRouter} from 'react-router';
 import { Link } from 'react-router-dom';
-import estibasSky from "../img/estibasSky.JPG"
 import {Container, Card} from "react-bootstrap"
 import depo from "../img/depositoGeneral.jpeg"
 import siempreVerde from "../img/siempreverde.png"
 import sanGeronimo from "../img/AzucareraSanGeronimo.png"
+import campo from "../img/campo.jpeg"
+import estibasSky from "../img/estibasSky.JPG"
+import transporteBB from "../img/transporteBB.JPG"
 import grupoPaz from "../img/grupo.png"
 import confiabilidad from '../img/system.png'
 import velocidad from '../img/speed.png'

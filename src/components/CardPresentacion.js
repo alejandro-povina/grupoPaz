@@ -3,6 +3,7 @@ import {Card} from "react-bootstrap";
 import depo from "../img/depositoGeneral.jpeg"
 import campo from "../img/campo.jpeg"
 import estibasSky from "../img/estibasSky.JPG"
+import transporteBB from "../img/transporteBB.JPG"
 import { Link } from 'react-router-dom';
 
 const CardPresentacion = () => {
