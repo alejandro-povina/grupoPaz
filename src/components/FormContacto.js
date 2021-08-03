@@ -149,6 +149,9 @@ return true
     isInvalid={nomApInvalid}
     onChange={handleValores}
    />
+    <Form.Control.Feedback type="invalid" className="text-danger small">
+              Ingrese un nombre valido.
+            </Form.Control.Feedback>
   </Form.Group>
   <Form.Group className="mt-3">
     <Form.Label><FontAwesomeIcon icon={faEnvelope} className="ubic turn"></FontAwesomeIcon> Email</Form.Label>
@@ -161,6 +164,9 @@ return true
     isValid={emailValid}
     isInvalid={emailInvalid}
     onChange={handleValores} />
+     <Form.Control.Feedback type="invalid" className="text-danger small">
+              Ingrese una direccion de email valida.
+            </Form.Control.Feedback>
   </Form.Group>
   <Form.Group className="mt-3">
     <Form.Label><FontAwesomeIcon icon={faBuilding} className="ubic turn"></FontAwesomeIcon> Empresa</Form.Label>
@@ -182,6 +188,9 @@ return true
     isValid={telValid}
     isInvalid={telInvalid}
     onChange={handleValores} />
+     <Form.Control.Feedback type="invalid" className="text-danger small">
+              Ingrese un numero de telefono valido. Debe comenzar con su codigo de area.
+            </Form.Control.Feedback>
   </Form.Group>
   <Form.Group className="mt-3">
   <Form.Label><FontAwesomeIcon icon={faComment} className="ubic turn"></FontAwesomeIcon> Consulta</Form.Label>
