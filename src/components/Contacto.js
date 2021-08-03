@@ -23,16 +23,16 @@ const Contacto = () => {
                     <div className="row">
                     <div className="col-sm-6 col-md-6">
                     <h6> <FontAwesomeIcon icon={faMapMarkerAlt} className="ubic turn"></FontAwesomeIcon> Ubicacion</h6>
-                    <p>Ruta Provincial 302 - km 6<br/>
+                    <p className="small">Ruta Provincial 302 - km 6<br/>
                     Cevil Pozo - CP 4178<br/>
                     Banda del Río Salí - Tucumán<br/>
                     Argentina<br/></p>
                     </div>
                     <div className="col-sm-6 col-md-6">
                     <h6> <FontAwesomeIcon icon={faPhoneAlt} className="ubic turn"></FontAwesomeIcon> Telefono</h6>
-                    <p>(+54) 3815 233262</p>
+                    <p className="small">(+54) 3815 233262</p>
                     <h6> <FontAwesomeIcon icon={faEnvelope} className="ubic turn"></FontAwesomeIcon> Email</h6>
-                    <p>grupopazsvasg@gmail.com</p>
+                    <p className="small">grupopazsvasg@gmail.com</p>
                     </div>
                     
                    
