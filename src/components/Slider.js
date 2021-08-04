@@ -1,8 +1,7 @@
 import React from 'react';
-import Carousel from 'react-bootstrap/Carousel'
 import planta from "../img/planta.png"
 import plantacion from "../img/plantacion.jpeg"
-import granel from "../img/granel.JPG"
+import granel from "../img/granel.jpg"
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"

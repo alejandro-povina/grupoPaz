@@ -40,11 +40,11 @@ const Inicio = () => {
               <Link to="/empresa" className="me-1 mt-0 bot text-light">Ver Mas</Link>
               </div>
               </div>
+          </div>
               <div className="my-5 d-flex justify-content-around align-items-center">
               <img src={sanGeronimo} className="logoSG" alt="logoSG" />
-          <img src={siempreVerde}className="logoSV"  alt="logoSV" /> 
+          <img src={siempreVerde}className="logoSV ms-3"  alt="logoSV" /> 
               </div>
-          </div>
          
           </div>
             {/* <div className="my-5 row">

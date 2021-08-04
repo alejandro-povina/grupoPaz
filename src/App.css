@@ -254,14 +254,12 @@ left: 39%;
   /*Agregar breakpoints*/
 }
 .logoSG{
- height: 150px;
-  border-radius: 15px; 
-  width:150px;
+ height: 120px;
+  width:120px;
 } 
 .logoSV{
-  height: 100px;
-   border-radius: 15px; 
-   width:300px;
+  height: 80px;
+   width:200px;
  } 
  
 .divlogos{
@@ -280,14 +278,12 @@ left: 39%;
     margin-bottom: 10px;
   }
   .logoSG{
-    height: 100px;
-     border-radius: 15px; 
-     width:100px;
+    height: 90px;
+     width:90px;
    } 
    .logoSV{
-     height: 80px;
-      border-radius: 15px; 
-      width:200px;
+     height: 70px;
+      width:150px;
     } 
     
 }
