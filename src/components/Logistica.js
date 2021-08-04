@@ -1,12 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import siempreVerde from "../img/siempreverde.png"
-import sanGeronimo from "../img/AzucareraSanGeronimo.png"
-import campo from "../img/campo.jpeg"
 import transporteBB from "../img/transporteBB.JPG"
-import estibaBigBag from "../img/estibaBigBag.JPG"
-import bolsaAzucar from "../img/bolsaAzucar1.png" 
-import paletizado from "../img/paletizadoStretch.JPG"
 import sider from "../img/camionSider.JPG"
 
 const Logistica = () => {

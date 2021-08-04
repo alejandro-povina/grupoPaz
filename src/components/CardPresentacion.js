@@ -13,7 +13,7 @@ const CardPresentacion = () => {
 <section className="row">
 <div className="col-sm-12 col-md-3">
   <div className="contenedor my-3">
-  <img className="imagen w-100" src={campo} />
+  <img className="imagen w-100" src={campo} alt="campo" />
   </div>
   <Link to="/servicios/agro" className="links2 tex"><h4>Agro</h4></Link>
     <hr className="w-25"/>
@@ -22,7 +22,7 @@ const CardPresentacion = () => {
 </div>
 <div className="col-sm-12 col-md-3">
   <div className="contenedor my-3">
-  <img className="imagen w-100" src={transporteBB} />
+  <img className="imagen w-100" src={transporteBB} alt="bigbag" />
   </div>
   <Link to="/servicios/logistica" className="links2"><h4>Logistica</h4></Link>
     <hr className="w-50"/>
@@ -32,7 +32,7 @@ const CardPresentacion = () => {
 </div>
 <div className="col-sm-12 col-md-3">
   <div className="contenedor my-3">
-  <img className="imagen" src={estibasSky} />
+  <img className="imagen" src={estibasSky} alt="sky" />
   </div>
   <Link to="/servicios/almacenaje" className="links2"><h4>Almacenaje</h4></Link>
     <hr className="w-50"/>
@@ -42,7 +42,7 @@ const CardPresentacion = () => {
 </div>
 <div className="col-sm-12 col-md-3">
   <div className="contenedor my-3">
-  <img className="imagen" src={depo} />
+  <img className="imagen" src={depo} alt="depo" />
   </div> 
   <Link to="/productos" className="links2"><h4>Productos</h4></Link>
     <hr className="w-50"/>

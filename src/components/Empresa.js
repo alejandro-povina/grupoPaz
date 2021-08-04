@@ -3,7 +3,7 @@ import zulo from '../img/deposito.JPG'
 import { Container} from 'react-bootstrap';
 import depo from "../img/depositoGeneral.jpeg"
 import grupoPaz from "../img/grupo.png"
-import Slider1 from './Slider1';
+import Slider from './Slider';
 import siempreVerde from "../img/siempreverde.png" 
 import sanGeronimo from "../img/AzucareraSanGeronimo.png"
 import fundadores from "../img/angieyzulo.jpg"
@@ -14,12 +14,12 @@ const Empresa = () => {
     return (
         <div className="fondo2">
             <div className="m-navbar" >
-            <Slider1 ></Slider1>
+            <Slider />
             </div>
             <Container>
                             <div className="d-flex justify-content-center align-items-center">
                         <h3 className="lead display-4">Nuestra Empresa</h3>
-                        <img src={grupoPaz} className="w-25" alt="" />
+                        <img src={grupoPaz} className="logoSG" alt="" />
                             </div>
                             <hr className="w-100 mt-0"/>
                 <section className="row mt-3">
@@ -27,11 +27,11 @@ const Empresa = () => {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis sapiente et. Repellat qui doloribus illum tempore accusamus impedit, ab fugit quaerat fuga! Quos eligendi, ad asperiores cupiditate illo eaque tempora? Hic tenetur nobis itaque sequi quae, doloribus error non quas dolorum voluptatem, cumque cupiditate explicabo quis quo odit, asperiores aut exercitationem! Quaerat distinctio ratione eius animi. At ipsam repellat numquam amet sint fugiat labore atque recusandae ut corporis sequi quisquam, velit odit doloribus a reprehenderit voluptatum consectetur illum sed ex molestias reiciendis iusto. Unde?</p>
                         </div>
                     <div className="col-sm-12 col-md-6 d-flex align-items-center">
-                    <img src={fundadores} className="w-100 imgPrincipal" alt="" />
+                    <img src={fundadores} className=" w-100 imgPrincipal" alt="" />
                     </div>
-                    <div className="my-3 divlogos mx-auto py-3">
-                        <img src={siempreVerde} className="logo " alt="" />
-                        <img src={sanGeronimo} className="logo" alt="" />          
+                    <div className="my-3 divlogos mx-auto py-3 d-flex justify-content-around align-items-center">
+                        <img src={siempreVerde} className="logoSV my-2" alt="" />
+                        <img src={sanGeronimo} className="logoSG my-2" alt="" />          
                     </div>
                     <div>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quis sapiente et. Repellat qui doloribus illum tempore accusamus impedit, ab fugit quaerat fuga! Quos eligendi, ad asperiores cupiditate illo eaque tempora? Hic tenetur nobis itaque sequi quae, doloribus error non quas dolorum voluptatem, cumque cupiditate explicabo quis quo odit, asperiores aut exercitationem! Quaerat distinctio ratione eius animi. At ipsam repellat numquam amet sint fugiat labore atque recusandae ut corporis sequi quisquam, velit.</p>

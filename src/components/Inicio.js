@@ -2,12 +2,8 @@ import React from 'react';
 import { withRouter} from 'react-router';
 import { Link } from 'react-router-dom';
 import {Container, Card} from "react-bootstrap"
-import depo from "../img/depositoGeneral.jpeg"
 import siempreVerde from "../img/siempreverde.png"
 import sanGeronimo from "../img/AzucareraSanGeronimo.png"
-import campo from "../img/campo.jpeg"
-import estibasSky from "../img/estibasSky.JPG"
-import transporteBB from "../img/transporteBB.JPG"
 import grupoPaz from "../img/grupo.png"
 import confiabilidad from '../img/system.png'
 import velocidad from '../img/speed.png'
@@ -44,16 +40,21 @@ const Inicio = () => {
               <Link to="/empresa" className="me-1 mt-0 bot text-light">Ver Mas</Link>
               </div>
               </div>
-            <div className="mt-5 row">
+              <div className="my-5 d-flex justify-content-around align-items-center">
+              <img src={sanGeronimo} className="logoSG" alt="logoSG" />
+          <img src={siempreVerde}className="logoSV"  alt="logoSV" /> 
+              </div>
+          </div>
+         
+          </div>
+            {/* <div className="my-5 row">
               <div className="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
-            <img src={siempreVerde}className="altura"  alt="" /> 
+            <img src={siempreVerde}className="logoSV"  alt="logoSV" /> 
               </div>
               <div className="col-sm-12 col-md-6 col-lg-6  d-flex justify-content-center">
-          <img src={sanGeronimo} className="altura" alt="" />
+          <img src={sanGeronimo} className="logoSG" alt="logoSG" />
               </div>
-            </div>
-          </div>
-          </div>
+            </div> */}
           </Card>  
 <Card className="w-100 tarjetas1 my-5">
   <Card.Header> <h3 className="display-6">Por que elegirnos?</h3></Card.Header>
@@ -92,7 +93,7 @@ const Inicio = () => {
 <div className=" pb-2">
 <Container>
   <CardPresentacion></CardPresentacion>
-  <h3 className="py-3 text-light"><b>Productos y Servicios</b></h3>
+  {/* <h3 className="py-3 text-light"><b>Productos y Servicios</b></h3>
 <div className="row">
 <div className="col-sm-12 col-md-3">
 <Card className="tarjetas1 my-3">
@@ -147,7 +148,7 @@ const Inicio = () => {
   </Card.Body>
 </Card>
 </div>
-</div>
+</div> */}
 </Container>
 </div>
 </div>

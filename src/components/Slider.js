@@ -1,51 +1,83 @@
-
-import React from "react";
-// Import Swiper React components
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel'
+import planta from "../img/planta.png"
+import plantacion from "../img/plantacion.jpeg"
+import granel from "../img/granel.JPG"
 import { Swiper, SwiperSlide } from "swiper/react";
-import ItemLogo from "./ItemLogo";
-import { Container } from "react-bootstrap";
-
-// Import Swiper styles
 import "swiper/swiper.min.css";
 import "swiper/components/pagination/pagination.min.css"
 import "swiper/components/navigation/navigation.min.css"
-// import Swiper core and required modules
 import SwiperCore, {
   Autoplay,Pagination,Navigation
 } from 'swiper/core';
-import campo from "../img/campo.jpeg"
-import transporteBB from "../img/transporteBB.JPG"
-import estibaBigBag from "../img/estibaBigBag.JPG"
-import grupoPaz from "../img/grupopaz.png"
-import grupo from "../img/grupo.png"
-import paz from "../img/paz.png"
-import ItemBotones from "./ItemBotones";
 
 
-const Slider = ()=>{
-    // install Swiper modules
-    SwiperCore.use([Autoplay,Pagination,Navigation]);
-  return (
-    <>
-    <Swiper spaceBetween={0} centeredSlides={true}  speed={1500} autoplay={{
-  "delay": 5000,
+const Slider = () => {
+  SwiperCore.use([Autoplay,Pagination,Navigation]);
+    return (
+      <div>
+         <Swiper spaceBetween={30} centeredSlides={true} autoplay={{
+  "delay": 2500,
   "disableOnInteraction": false
 }} pagination={{
   "clickable": true
-}} navigation={true}  className="mySwiper">
-  <Container>
-  <SwiperSlide><img src={campo} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={transporteBB} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={estibaBigBag} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={campo} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={transporteBB} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={campo} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={transporteBB} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={campo} alt="" /></SwiperSlide>
-  <SwiperSlide><img src={transporteBB} alt="" /></SwiperSlide>
-  </Container>
+}} navigation={true} className="mySwiper">
+  <SwiperSlide> <img
+      className="d-block w-100 alturaSlider"
+      src={planta}
+      alt="First slide"
+      /></SwiperSlide>
+      <SwiperSlide> <img
+      className="d-block w-100 alturaSlider"
+      src={plantacion}
+      alt="Second slide"
+      /></SwiperSlide>
+      <SwiperSlide><img
+      className="d-block w-100 alturaSlider"
+      src={granel}
+      alt="Third slide"
+      />
+      </SwiperSlide>
   </Swiper>
-    </>
-  )
-}
+
+
+            {/* <Carousel >
+  <Carousel.Item >
+    <img
+      className="d-block w-100 alturaSlider"
+      src={planta}
+      alt="First slide"
+      />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100 alturaSlider"
+      src={plantacion}
+      alt="Second slide"
+      />
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item >
+    <img
+      className="d-block w-100 alturaSlider"
+      src={granel}
+      alt="Third slide"
+      />
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel> */}
+      </div>
+    );
+};
+
 export default Slider;

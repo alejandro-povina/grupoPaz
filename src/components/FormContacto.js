@@ -1,7 +1,7 @@
 import React, {useState } from 'react';
 import { Form, Button, Card} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneAlt, faUser, faBuilding, faComment, faTruck } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhoneAlt, faUser, faBuilding, faComment} from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 import emailjs from "emailjs-com";
 
@@ -51,7 +51,7 @@ const FormContacto = () => {
       setNomApValid("");
       setNomApInvalid("")
       const texto = expresiones.nombre;
-      if(formConsult.nomAp.trim() == "" || !texto.test(formConsult.nomAp)){
+      if(formConsult.nomAp.trim() ==="" || !texto.test(formConsult.nomAp)){
         setNomApInvalid(true);
         return true
       }else{
@@ -63,7 +63,7 @@ const FormContacto = () => {
     setEmailValid("");
     setEmailInvalid("");
     const emailT = expresiones.email;
-    if(formConsult.email.trim()=="" || !emailT.test(formConsult.email)){
+    if(formConsult.email.trim()==="" || !emailT.test(formConsult.email)){
       setEmailInvalid(true);
       return true
     }else{
@@ -75,7 +75,7 @@ const validarTel = ()=>{
   setTelValid("");
   setTelInvalid("");
   const telefono = expresiones.telefono;
-  if(formConsult.tel.trim()=="" || !telefono.test(formConsult.tel)){
+  if(formConsult.tel.trim()==="" || !telefono.test(formConsult.tel)){
     setTelInvalid(true);
     return true
   }else{
@@ -89,7 +89,7 @@ const validarConsulta = ()=>{
   setConsultaValid("");
   setConsultaInvalid("");
   const  consultaT = expresiones.consulta;
-  if(formConsult.consulta.trim()=="" || !consultaT.test(formConsult.consulta)){
+  if(formConsult.consulta.trim()==="" || !consultaT.test(formConsult.consulta)){
 setConsultaInvalid(true);
 return true
   }else{
