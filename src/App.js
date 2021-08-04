@@ -41,6 +41,9 @@ const App = () => {
         <Route exact path="/servicios/agro">
         <Agro></Agro>
         </Route>
+        <Route exact path="*">
+              <Error404></Error404>
+            </Route>
       </Switch>
       <Footer></Footer>
       </Router>

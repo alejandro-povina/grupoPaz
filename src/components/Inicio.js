@@ -32,11 +32,11 @@ const Inicio = () => {
             </div>  
             </div>
           <div className="col-sm-12 col-md-6 col-lg-8 mt-4">
-          <h3 className="display-6 text-sm-center text-md-start">¿Quienes Somos?</h3>
+          <h3 className="display-6 text-center text-md-start">¿Quienes Somos?</h3>
           <hr/>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum rem officiis consequatur voluptatibus placeat, ratione amet ipsa veniam veritatis laudantium sint?</p>
-              <div className="d-flex justify-content-end me-5">
-              <div >
+              <div className="d-flex justify-content-center  justify-content-md-end">
+              <div>
               <Link to="/empresa" className="me-1 mt-0 bot text-light">Ver Mas</Link>
               </div>
               </div>
