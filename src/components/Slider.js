@@ -1,15 +1,11 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
 import planta from "../img/planta.png"
 import plantacion from "../img/plantacion.jpeg"
 import granel from "../img/granel.jpg"
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/pagination/pagination.min.css"
-import "swiper/components/navigation/navigation.min.css"
 import SwiperCore, {
   Autoplay,Pagination,Navigation
 } from 'swiper/core';
-
 
 const Slider = () => {
   SwiperCore.use([Autoplay,Pagination,Navigation]);

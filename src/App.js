@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
 import React from 'react';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -11,6 +14,7 @@ import Productos from './components/Productos';
 import Almacenaje from './components/Almacenaje'
 import Agro from './components/Agro'
 import Logistica from './components/Logistica'
+import Error404 from "./components/Error404"
 
 
 const App = () => {

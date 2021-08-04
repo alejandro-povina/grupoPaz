@@ -14,15 +14,13 @@ import CardPresentacion from './CardPresentacion';
 
 const Inicio = () => {
 
-  
-
     return (
         <div className="m-navbar fondo1"> 
           <Container className=""> 
           <Card className="tarjetas1 my-3">
-          <div className="row mb-4 mx-3">
-            <div className="col-sm-12 col-md-6 col-lg-4 ">
-            <div className="d-flex flex-wrap align-items-center justify-content-center container">
+          <div className="row mb-4 mx-3 ">
+            <div className="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center mb-3 ">
+            <div className="d-flex flex-wrap justify-content-center">
               <div>
           <img src={grupoPaz} className="w-100 mt-0" alt="" />
               </div>
@@ -31,7 +29,7 @@ const Inicio = () => {
               </div>
             </div>  
             </div>
-          <div className="col-sm-12 col-md-6 col-lg-8 mt-4">
+          <div className="col-sm-12 col-md-6 col-lg-8 d-flex flex-column justify-content-center my-5">
           <h3 className="display-6 text-center text-md-start">¿Quienes Somos?</h3>
           <hr/>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum rem officiis consequatur voluptatibus placeat, ratione amet ipsa veniam veritatis laudantium sint?</p>
@@ -40,11 +38,15 @@ const Inicio = () => {
               <Link to="/empresa" className="me-1 mt-0 bot text-light">Ver Mas</Link>
               </div>
               </div>
-          </div>
-              <div className="my-5 d-flex justify-content-around align-items-center">
+              <div className=" mt-5 d-flex justify-content-around align-items-center">
               <img src={sanGeronimo} className="logoSG" alt="logoSG" />
           <img src={siempreVerde}className="logoSV ms-3"  alt="logoSV" /> 
               </div>
+          </div>
+              {/* <div className="my-5 d-flex justify-content-around align-items-center">
+              <img src={sanGeronimo} className="logoSG" alt="logoSG" />
+          <img src={siempreVerde}className="logoSV ms-3"  alt="logoSV" /> 
+              </div> */}
          
           </div>
             {/* <div className="my-5 row">
