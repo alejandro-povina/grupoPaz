@@ -13,9 +13,9 @@ const Navigation = () => {
   <Navbar.Brand className="d-flex flex-column align-items-center" as={Link} to="/" onClick={() => setTimeout(() => {setExpanded(false)}, 150)} >Grupo Paz <hr className="hrNav my-2" /></Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setExpanded(expanded ? false : "expanded")} />
   <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
+    <Nav className="mr-auto" >
       <NavLink 
-      onClick={() => setTimeout(() => {setExpanded(false)}, 150)} 
+       onClick={() => setTimeout(() => {setExpanded(false)}, 150)}
       exact={true} 
       className="nav-link" 
       to="/empresa">
