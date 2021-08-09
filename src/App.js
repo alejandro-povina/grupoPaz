@@ -21,35 +21,35 @@ const App = () => {
   return (
       <Router>
         <div className="container-fluid">
-        <Navigation></Navigation>
+        <Navigation/>
         </div>
       <Switch >
         <Route exact path="/">
-        <Inicio></Inicio>
+        <Inicio/>
         </Route>
         <Route exact path="/empresa">
-        <Empresa></Empresa>
+        <Empresa/>
         </Route>
         <Route exact path="/contacto">
-        <Contacto></Contacto>
+        <Contacto/>
         </Route>
         <Route exact path="/productos">
-        <Productos></Productos>
+        <Productos/>
         </Route>
         <Route exact path="/servicios/almacenaje">
-        <Almacenaje></Almacenaje>
+        <Almacenaje/>
         </Route>
         <Route exact path="/servicios/logistica">
-        <Logistica></Logistica>
+        <Logistica/>
         </Route>
         <Route exact path="/servicios/agro">
-        <Agro></Agro>
+        <Agro/>
         </Route>
         <Route exact path="*">
-              <Error404></Error404>
+              <Error404/>
             </Route>
       </Switch>
-      <Footer></Footer>
+      <Footer/>
       </Router>
       
    

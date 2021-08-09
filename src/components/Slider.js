@@ -2,7 +2,7 @@ import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import planta from "../img/planta.png"
 import plantacion from "../img/plantacion.jpeg"
-import granel from "../img/granel.jpg"
+import estibas from "../img/estibasSky.JPG"
 import SwiperCore, {
   Autoplay,Pagination,Navigation
 } from 'swiper/core';
@@ -29,7 +29,7 @@ const Slider = () => {
       /></SwiperSlide>
       <SwiperSlide><img
       className="d-block w-100 alturaSlider"
-      src={granel}
+      src={estibas}
       alt="Third slide"
       />
       </SwiperSlide>
