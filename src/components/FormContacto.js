@@ -109,6 +109,10 @@ const limpiarForm = (e) => {
   const handleSubmit = (e)=>{
     e.preventDefault();
     enviarConsulta();
+    if(enviarConsulta){
+      limpiarForm(e);
+
+    }
   }
 
  
@@ -130,7 +134,7 @@ const limpiarForm = (e) => {
                "Su consulta fue enviada, nos pondremos en contacto con usted a la brevedad",
                "success"
              );
-             limpiarForm(e);
+             
            }
            console.log(result);
          },
