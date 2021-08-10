@@ -1,11 +1,13 @@
 import React, {useState } from 'react';
 import { Form, Button, Card} from 'react-bootstrap';
+import { withRouter } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneAlt, faUser, faBuilding, faComment} from '@fortawesome/free-solid-svg-icons';
 import Swal from 'sweetalert2';
 import emailjs from "emailjs-com";
+import MsjError from './MsjError';
 
-const FormContacto = () => {
+const FormContacto = (props) => {
 
   const [formConsult, setFormConsult] =useState ({
     nomAp: "",
@@ -14,6 +16,7 @@ const FormContacto = () => {
     tel: "",
     consulta:""
   });
+  const [error, setError]=useState(false);
 
   //states para feedback
   const [nomApValid, setNomApValid] = useState("");
@@ -48,11 +51,13 @@ const FormContacto = () => {
 
   //validaciones
   const validarNomAp = () =>{
+    console.log(formConsult)
       setNomApValid("");
       setNomApInvalid("")
       const texto = expresiones.nombre;
       if(formConsult.nomAp.trim() ==="" || !texto.test(formConsult.nomAp)){
         setNomApInvalid(true);
+        console.log("no valido")
         return true
       }else{
         setNomApValid(true);
@@ -60,11 +65,13 @@ const FormContacto = () => {
       }
   }
   const validarEmail = ()=>{
+    console.log(formConsult)
     setEmailValid("");
     setEmailInvalid("");
     const emailT = expresiones.email;
     if(formConsult.email.trim()==="" || !emailT.test(formConsult.email)){
       setEmailInvalid(true);
+      console.log("no valido")
       return true
     }else{
       setEmailValid(true);
@@ -72,11 +79,13 @@ const FormContacto = () => {
     }
   }
 const validarTel = ()=>{
+  console.log(formConsult)
   setTelValid("");
   setTelInvalid("");
   const telefono = expresiones.telefono;
   if(formConsult.tel.trim()==="" || !telefono.test(formConsult.tel)){
     setTelInvalid(true);
+    console.log("no valido")
     return true
   }else{
     setTelValid(true)
@@ -86,37 +95,58 @@ const validarTel = ()=>{
 
 
 const validarConsulta = ()=>{
+  console.log(formConsult)
   setConsultaValid("");
   setConsultaInvalid("");
   const  consultaT = expresiones.consulta;
   if(formConsult.consulta.trim()==="" || !consultaT.test(formConsult.consulta)){
 setConsultaInvalid(true);
+console.log("no valido")
 return true
-  }else{
-    setConsultaValid(true);
-    return false
+}else{
+  setConsultaValid(true);
+  return false
   }
 }
 
 const limpiarForm = (e) => {
-  e.target.reset();
+  e.target.reset(e)
   setNomApValid("");
   setConsultaValid("");
   setEmailValid("");
   setTelValid("");
+  setError(false);
+  setFormConsult({
+    nomAp: "",
+    empresa:"",
+    email:"",
+    tel: "",
+    consulta:""
+  })
 };
 
-  const handleSubmit = (e)=>{
-    e.preventDefault();
-    enviarConsulta();
-    if(enviarConsulta){
-      limpiarForm(e);
 
-    }
+
+  const handleSubmit = (e)=>{
+    console.log(formConsult)
+    e.preventDefault();
+    if(validarNomAp(formConsult.nomAp) || validarEmail(formConsult.email)|| validarTel(formConsult.tel) || validarConsulta(formConsult.consulta)){
+      console.log("debe validar todos los campos")
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 2000);
+    }else{
+      console.log("enviando msj")
+      enviarConsulta();
+      limpiarForm(e);
+      scrollToTop();
+      console.log(formConsult)
+      
+    }  
   }
 
  
-
   //enviar consulta EmailJS
    const enviarConsulta = (e) => {
      emailjs
@@ -129,20 +159,51 @@ const limpiarForm = (e) => {
        .then(
          (result) => {
            if (result.status === 200) {
-             Swal.fire(
-               "Consulta enviada",
-               "Su consulta fue enviada, nos pondremos en contacto con usted a la brevedad",
-               "success"
-             );
-             
+            const Toast = Swal.mixin({
+              toast: true,
+              position: 'center',
+              showConfirmButton: false,
+              timer: 1500,
+              timerProgressBar: true,
+              didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer)
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+              }
+            })
+            Toast.fire({
+              icon: 'success',
+              title: 'Su consulta fue enviada correctamente'
+            })       
            }
            console.log(result);
          },
          (error) => {
-           console.log(error.text);
+           console.log(error)
+          const Toast = Swal.mixin({
+            toast: true,
+            position: 'center',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          Toast.fire({
+            icon: 'error',
+            title: 'Ha ocurido un error, intentelo de nuevo mas tarde'
+          })
          }
        );
    };
+
+   const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
 
     return (
         <Card className="tarjetas1 bg-white">
@@ -227,9 +288,12 @@ const limpiarForm = (e) => {
   <Button className="w-100 my-3 botones" type="submit">
     Enviar
   </Button>
+  {
+          (error) ? (<MsjError text1="Datos incorrectos" text2="Todos los campos son obligatorios." />) : (null)
+          }
 </Form>
 </Card>
     );
 };
 
-export default FormContacto;
+export default withRouter(FormContacto);
