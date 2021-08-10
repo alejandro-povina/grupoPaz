@@ -30,6 +30,15 @@ const Navigation = () => {
   <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto" >
       <NavLink 
+      onClick={() => setTimeout(() => {
+        scrollToTop(); 
+        setExpanded(false)}, 150)} 
+      exact={true} 
+      className="nav-link" 
+      to="/">
+        Inicio
+        </NavLink>
+      <NavLink 
        onClick={() => setTimeout(() => {
         scrollToTop(); 
         setExpanded(false)}, 150)}
@@ -55,15 +64,6 @@ const Navigation = () => {
       className="nav-link" 
       to="/productos">
         Productos
-        </NavLink>
-      <NavLink 
-      onClick={() => setTimeout(() => {
-        scrollToTop(); 
-        setExpanded(false)}, 150)} 
-      exact={true} 
-      className="nav-link" 
-      to="/">
-        Inicio
         </NavLink>
       <NavDropdown title="Servicios" className="" id="basic-nav-dropdown">
         <NavDropdown.Item 

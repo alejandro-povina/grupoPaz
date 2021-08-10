@@ -98,12 +98,20 @@ return true
   }
 }
 
+const limpiarForm = (e) => {
+  e.target.reset();
+  setNomApValid("");
+  setConsultaValid("");
+  setEmailValid("");
+  setTelValid("");
+};
 
   const handleSubmit = (e)=>{
     e.preventDefault();
     enviarConsulta();
-    
   }
+
+ 
 
   //enviar consulta EmailJS
    const enviarConsulta = (e) => {
@@ -122,6 +130,7 @@ return true
                "Su consulta fue enviada, nos pondremos en contacto con usted a la brevedad",
                "success"
              );
+             limpiarForm(e);
            }
            console.log(result);
          },
