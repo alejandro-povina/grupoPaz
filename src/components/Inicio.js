@@ -13,7 +13,12 @@ import ItemBotones from './ItemBotones';
 import CardPresentacion from './CardPresentacion';
 
 const Inicio = () => {
-
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
     return (
         <div className="m-navbar fondo1"> 
           <Container className=""> 
@@ -35,7 +40,12 @@ const Inicio = () => {
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem earum rem officiis consequatur voluptatibus placeat, ratione amet ipsa veniam veritatis laudantium sint?</p>
               <div className="d-flex justify-content-center  justify-content-md-end">
               <div>
-              <Link to="/empresa" className="me-1 mt-0 bot text-light">Ver Mas</Link>
+              <Link
+              onClick={() =>scrollToTop()}  
+              to="/empresa" 
+              className="me-1 mt-0 bot text-light">
+                Ver Mas
+                </Link>
               </div>
               </div>
               <div className=" mt-5 d-flex justify-content-around align-items-center">

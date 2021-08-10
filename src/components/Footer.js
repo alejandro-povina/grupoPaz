@@ -1,4 +1,4 @@
-import React from 'react';
+import {React} from 'react';
 import { Dropdown, Nav } from 'react-bootstrap';
 import { withRouter } from 'react-router';
 import { Link } from "react-router-dom";
@@ -9,6 +9,13 @@ import { faMapMarkerAlt, faEnvelope, faPhoneAlt} from "@fortawesome/free-solid-s
 
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  
     return (
         <div className="foot text-light pb-2 row mt-0 mx-0">
                 <div className="col-sm-12 col-md-4 my-3">
@@ -16,22 +23,62 @@ const Footer = () => {
                     <Dropdown.Divider />
                     <div className="d-flex justify-content-evenly">
                     <div className="box">
-                        <Link to="/" className="links">Inicio</Link>
-                        <Link to="/empresa" className="links">La Empresa</Link>
-                        <Link to="/contacto" className="links">Contacto</Link>
-                        <Link to="/productos" className="links">Productos</Link> 
+                        <Link
+                        onClick={() =>scrollToTop()} 
+                        to="/" 
+                        className="links">
+                            Inicio
+                            </Link>
+                        <Link
+                        onClick={() =>scrollToTop()} 
+                        to="/empresa" 
+                        className="links">
+                            La Empresa
+                            </Link>
+                        <Link
+                        onClick={() =>scrollToTop()} 
+                        to="/contacto" 
+                        className="links">
+                            Contacto
+                            </Link>
+                        <Link
+                        onClick={() =>scrollToTop()} 
+                        to="/productos"
+                        className="links">
+                        Productos
+                        </Link> 
                     </div>
                     <div className="box">
-                    <Link to="/servicios/logistica" className="links">Logistica</Link>
-                        <Link to="/servicios/almacenaje" className="links">Almacenaje</Link>
-                         <Link to="/servicios/agro" className="links">Agro</Link>
+                    <Link
+                    onClick={() =>scrollToTop()} 
+                    to="/servicios/logistica" 
+                    className="links">
+                    Logistica
+                    </Link>
+                    <Link
+                    onClick={() =>scrollToTop()} 
+                    to="/servicios/almacenaje" 
+                    className="links">
+                    Almacenaje
+                    </Link>
+                    <Link
+                    onClick={() =>scrollToTop()} 
+                    to="/servicios/agro" 
+                    className="links">
+                    Agro
+                    </Link>
                     </div>
             </div>
                     
             </div>
             
             <div className="col-sm-12 col-md-4 my-3">
-            <Link to="/contacto" className="links"><b>Contacto</b></Link>
+            <Link
+            onClick={() =>scrollToTop()} 
+            to="/contacto"
+            className="links">
+            <b>Contacto</b>
+            </Link>
             <Dropdown.Divider/>
             <div className="d-flex justify-content-center">
             <div className="box">
